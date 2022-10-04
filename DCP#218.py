@@ -12,4 +12,4 @@ for values in graph:
 graph.reverse()
 print(graph)
 for values in graph:
-    print(values + "->")
+    print(values + "< -")
