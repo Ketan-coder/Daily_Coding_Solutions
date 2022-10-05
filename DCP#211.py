@@ -9,10 +9,11 @@ string = "abracadabra"
 pattern = "abr"
 
 splited = string.split(pattern)
-print(splited[0])
 
-for i in string:
-    for j in pattern:
-        if i == j:
-            print(i + "==" + j)
-            print("Yes")
+listToStr = ''.join(map(str, splited))
+print(listToStr)
+
+if string == listToStr:
+    print('Same')
+else:
+    print('Different')
